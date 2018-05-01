@@ -1,0 +1,29 @@
+{
+  "name": "incomerce-server",
+  "version": "1.0.0",
+  "description": "Express API server for Incomerce",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "concurrently --kill-others \"tsc -w\" \"nodemon build/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "danielos15@ru.is",
+  "license": "MIT",
+  "dependencies": {
+    "@types/es6-shim": "^0.31.36",
+    "@types/express": "^4.11.1",
+    "@types/node": "^10.0.0",
+    "express": "^4.16.3",
+    "reflect-metadata": "^0.1.12",
+    "sequelize": "^4.37.6",
+    "sequelize-typescript": "^0.6.4",
+    "typescript": "^2.8.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.3"
+  }
+}
